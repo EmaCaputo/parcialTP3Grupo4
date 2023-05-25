@@ -1,4 +1,4 @@
-package ort.edu.ar.TP3.primerParcial.Grupo4
+package ort.edu.ar.tp3.primerparcial.grupo4
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

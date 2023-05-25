@@ -1,4 +1,4 @@
-package ort.edu.ar.TP3.primerParcial.Grupo4
+package ort.edu.ar.tp3.primerparcial.grupo4
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("ort.edu.ar.TP3.primerParcial.Grupo4", appContext.packageName)
+        assertEquals("ort.edu.ar.tp3.primerparcial.grupo4", appContext.packageName)
     }
 }

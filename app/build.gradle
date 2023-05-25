@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'ort.edu.ar.TP3.primerParcial.Grupo4'
+    namespace 'ort.edu.ar.tp3.primerparcial.grupo4'
     compileSdk 33
 
     defaultConfig {
-        applicationId "ort.edu.ar.TP3.primerParcial.Grupo4"
+        applicationId "ort.edu.ar.tp3.primerparcial.grupo4"
         minSdk 26
         targetSdk 33
         versionCode 1
