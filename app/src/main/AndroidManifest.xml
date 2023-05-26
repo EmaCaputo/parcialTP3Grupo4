@@ -18,6 +18,18 @@
             android:name=".ui.splashscreen.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+
+        <!-- Login activity -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- Main activity -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,14 +37,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Login activity -->
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="true" />
-        <!-- Main activity -->
-        <activity
-            android:name=".ui.main.MainActivity"
-            android:exported="true" />
+
     </application>
 
 </manifest>

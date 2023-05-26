@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:textColorPrimary="@color/black">
+
+
     <item
         android:id="@+id/fragment_home"
-        android:icon="@drawable/ic_profile"
+        android:icon="@drawable/ic_nav_home"
         android:title="Home"  />
     <item
         android:id="@+id/fragment_cars"
-        android:icon="@drawable/ic_profile"
+        android:icon="@drawable/ic_nav_shop"
         android:title="Autos" />
     <item
         android:id="@+id/fragment_search"
-        android:icon="@drawable/ic_profile"
+        android:icon="@drawable/ic_nav_search"
         android:title="Buscar" />
     <item
         android:id="@+id/fragment_profile"
