@@ -3,4 +3,11 @@
 
     <!-- Home Fragment -->
     <string name="fragment_home_category_filter">Filtro</string>
+
+    <!-- Text Premier Rent Car -->
+    <string name="premier">Premier</string>
+    <string name="rent">RentCar</string>
+    <string name="olvide_la_c">Olvide la contraseña</string>
+
+
 </resources>

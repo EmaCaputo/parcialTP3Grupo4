@@ -29,7 +29,6 @@
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="true" />
-
         <!-- Main activity -->
         <activity
             android:name=".ui.main.MainActivity"
