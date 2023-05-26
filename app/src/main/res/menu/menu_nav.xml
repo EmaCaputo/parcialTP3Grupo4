@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_home"
+        android:icon="@drawable/ic_profile"
+        android:title="Home"  />
+    <item
+        android:id="@+id/fragment_cars"
+        android:icon="@drawable/ic_profile"
+        android:title="Autos" />
+    <item
+        android:id="@+id/fragment_search"
+        android:icon="@drawable/ic_profile"
+        android:title="Buscar" />
+    <item
+        android:id="@+id/fragment_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Perfil" />
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.main.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fragment_cars"
+        android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.main.cars.CarsFragment"
+        android:label="Autos"
+        tools:layout="@layout/fragment_cars" />
+
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.main.search.SearchFragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.main.profile.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
