@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:layout_margin="23dp"
+    android:background="@drawable/shape_bg_category">
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:letterSpacing="0"
+        android:lineHeight="30sp"
+        android:text="Deportivo"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Deportivos" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="162dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_deportive" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/category_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0"
+            android:lineHeight="11sp"
+            android:text="@string/fragment_home_category_filter"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="9sp" />
+
+        <ImageView
+            android:id="@+id/img_view_category_filter"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="6dp"
+            app:srcCompat="@drawable/ic_category_filter" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
