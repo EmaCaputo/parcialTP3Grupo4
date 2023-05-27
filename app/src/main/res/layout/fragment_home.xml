@@ -5,14 +5,89 @@
     android:id="@+id/fragment_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_3"
+    android:background="@drawable/background_general"
     tools:context=".ui.main.home.HomeFragment">
 
-   <!--
-    <include
-        layout="@layout/recycler_car_category" />
-        -->
-    <include
-        layout="@layout/recycler_card_brand" />
+    <LinearLayout
+        android:layout_width="351dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="671dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rectangle_search">
+
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lupa"
+            android:paddingTop="15.32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20.59dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_search"
+            android:layout_width="198.66dp"
+            android:layout_height="15dp"
+            android:text="Buscador de vehiculos"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12.35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:textColor="#A8A8A8"
+            android:textSize="12sp"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_categorias"
+        android:layout_width="341dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="274dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="195dp"
+        android:text="Marcas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="top"
+        android:textSize="24sp"
+        android:textColor="#0D0D0D"
+        android:fontFamily="@font/fira_sans_black"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_marcas"
+        android:layout_width="341dp"
+        android:layout_height="119dp"
+        android:scrollbars="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="23dp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="537dp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
