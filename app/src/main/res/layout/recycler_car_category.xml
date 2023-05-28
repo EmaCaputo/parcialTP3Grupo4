@@ -4,8 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="112dp"
-    android:layout_marginTop="10dp"
-    android:background="@drawable/shape_bg_category">
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/background_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shape_bg_category_dep" />
 
     <TextView
         android:id="@+id/category_title"
@@ -24,7 +33,7 @@
         tools:text="Deportivos" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_car"
         android:layout_width="162dp"
         android:layout_height="93dp"
         app:layout_constraintBottom_toBottomOf="parent"

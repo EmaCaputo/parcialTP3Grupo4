@@ -19,10 +19,18 @@ class HomeFragment : Fragment() {
 
     var listaCategorias : MutableList<Categoria> = ArrayList<Categoria>()
 
+
+
     override fun onCreate (savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        listaCategorias.add(Categoria("Deportivos", "shape_bg_category_dep", "img_deportive"))
+        listaCategorias.add(Categoria("SUV", "shape_bg_category_suv", "img_suv"))
+        listaCategorias.add(Categoria("ELÉCTRICOS", "shape_bg_category_elec", "img_electricos"))
+
     }
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -31,17 +39,15 @@ class HomeFragment : Fragment() {
         var vista = inflater.inflate(R.layout.fragment_home, container, false)
 
 
-        listaCategorias.add(Categoria("Deportivos", "white"))
-        listaCategorias.add(Categoria("SUV", "white"))
-        listaCategorias.add(Categoria("ELÉCTRICOS", "white"))
+
 
         val recyclerViewCategoria = vista.findViewById<RecyclerView>(R.id.rec_categorias)
         recyclerViewCategoria.adapter = CategoriaListAdapter(listaCategorias)
         val linearLayoutManager = LinearLayoutManager(context)
         recyclerViewCategoria.layoutManager = linearLayoutManager
 
+
         return vista
     }
-
 
 }

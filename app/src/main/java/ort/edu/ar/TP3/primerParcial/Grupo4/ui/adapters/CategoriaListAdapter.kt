@@ -24,6 +24,8 @@ class CategoriaListAdapter(
     override fun onBindViewHolder(holder: CategoriasViewHolder, position: Int) {
         val categoria = categoriasList[position]
         holder.setTitulo(categoria.titulo)
+        holder.setColor(categoria.color)
+        holder.setImagen(categoria.imagen)
     }
 
 

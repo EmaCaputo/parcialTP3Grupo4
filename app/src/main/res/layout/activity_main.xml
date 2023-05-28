@@ -30,6 +30,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
+            android:theme="@style/BottomNavThem"
+            android:background="@color/white"
             app:headerLayout="@layout/menu_slide_header"
             app:menu="@menu/menu_slide" />
     </androidx.drawerlayout.widget.DrawerLayout>

@@ -5,8 +5,9 @@
         <item name="colorPrimary">@color/white</item>
         <item name="android:textColorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondary">@color/white</item>
         <item name="colorSecondaryVariant">@color/black</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -15,8 +16,9 @@
 
     </style>
 
-    <style name="BottomNavThem" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/black</item>
+    <style name="BottomNavThem" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
     </style>
 
     <style name="myTheme.ActionBar.Text" parent="@android:style/TextAppearance">
