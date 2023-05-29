@@ -30,8 +30,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
-            android:theme="@style/BottomNavThem"
-            android:background="@color/white"
             app:headerLayout="@layout/menu_slide_header"
             app:menu="@menu/menu_slide" />
     </androidx.drawerlayout.widget.DrawerLayout>
@@ -42,9 +40,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_nav"
         android:background="@color/white"
-        android:theme="@style/BottomNavThem"
-        app:menu="@menu/menu_nav" />
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextAppearanceActive="@style/BottomNavigationView"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        app:labelVisibilityMode="labeled"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -1,4 +1,5 @@
 <resources>
+    <!-- App name -->
     <string name="app_name">PremierRentCar</string>
 
     <!-- Home Fragment -->
@@ -9,5 +10,9 @@
     <string name="rent">RentCar</string>
     <string name="olvide_la_c">Olvide la contraseña</string>
 
-    
+    <!-- Menu Nav -->
+    <string name="str_menu_nav_home">Home</string>
+    <string name="str_menu_nav_cars">Autos</string>
+    <string name="str_menu_nav_search">Buscar</string>
+    <string name="str_menu_nav_profile">Perfil</string>
 </resources>
