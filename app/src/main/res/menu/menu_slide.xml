@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/white">
-
     <item
         android:id="@+id/fragment_profile"
         android:icon="@drawable/ic_profile"
-        android:title="Perfil"  />
+        android:title="Perfil" />
     <item
         android:id="@+id/fragment_settings"
         android:icon="@drawable/ic_config"
@@ -14,5 +13,4 @@
         android:id="@+id/fragment_favorite"
         android:icon="@drawable/ic_notification"
         android:title="Favoritos" />
-
 </menu>

@@ -30,12 +30,12 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/fragment_settings"
-        android:name="ort.edu.ar.TP3.primerParcial.Grupo4.ui.settings.SettingsFragment"
+        android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.settings.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/fragment_favorite"
-        android:name="ort.edu.ar.TP3.primerParcial.Grupo4.ui.favorites.FavoriteFragment"
+        android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.main.favorites.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
 </navigation>

@@ -1,14 +1,12 @@
-package ort.edu.ar.TP3.primerParcial.Grupo4.ui.entities
+package ort.edu.ar.tp3.primerparcial.grupo4.ui.entities
 
-import android.graphics.drawable.Drawable
-import android.net.Uri
 import java.io.Serializable
 
-class Categoria (titulo: String?, color: String?, imagen: String?) : Serializable {
+class Categoria(titulo: String?, color: String?, imagen: String?) : Serializable {
 
-    var titulo: String= ""
-    var color: String= ""
-    var imagen: String= ""
+    var titulo: String = ""
+    var color: String = ""
+    var imagen: String = ""
 
     init {
         this.titulo = titulo!!

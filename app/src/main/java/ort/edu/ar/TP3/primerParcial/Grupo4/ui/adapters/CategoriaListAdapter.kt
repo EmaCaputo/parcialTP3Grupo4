@@ -1,11 +1,11 @@
-package ort.edu.ar.TP3.primerParcial.Grupo4.ui.adapters
+package ort.edu.ar.tp3.primerparcial.grupo4.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import ort.edu.ar.TP3.primerParcial.Grupo4.ui.entities.Categoria
-import ort.edu.ar.TP3.primerParcial.Grupo4.ui.holders.CategoriasViewHolder
+import ort.edu.ar.tp3.primerparcial.grupo4.ui.holders.CategoriasViewHolder
 import ort.edu.ar.tp3.primerparcial.grupo4.R
+import ort.edu.ar.tp3.primerparcial.grupo4.ui.entities.Categoria
 
 class CategoriaListAdapter(
     private val categoriasList: MutableList<Categoria>

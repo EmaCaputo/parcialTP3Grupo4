@@ -1,4 +1,4 @@
-package ort.edu.ar.TP3.primerParcial.Grupo4.ui.favorites
+package ort.edu.ar.tp3.primerparcial.grupo4.ui.main.favorites
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import ort.edu.ar.tp3.primerparcial.grupo4.R
 
-
 class FavoriteFragment : Fragment() {
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

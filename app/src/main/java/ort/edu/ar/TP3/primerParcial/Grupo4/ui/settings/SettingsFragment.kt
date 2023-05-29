@@ -1,4 +1,4 @@
-package ort.edu.ar.TP3.primerParcial.Grupo4.ui.settings
+package ort.edu.ar.tp3.primerparcial.grupo4.ui.settings
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

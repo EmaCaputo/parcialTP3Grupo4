@@ -5,6 +5,7 @@
     android:id="@+id/fragment_cars"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_main_activity"
     tools:context=".ui.main.cars.CarsFragment">
 
     <TextView
