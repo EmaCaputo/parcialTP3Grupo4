@@ -2,6 +2,7 @@ package ort.edu.ar.tp3.primerparcial.grupo4.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -18,11 +19,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
     private lateinit var bottomNav: BottomNavigationView
+    private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportActionBar?.title = "PremierRentCar"
+
+        toolbar = findViewById(R.id.nav_bar_toolbar)
         drawerLayout = findViewById(R.id.drawer_layout)
         navigationView = findViewById(R.id.nav_view)
         bottomNav = findViewById(R.id.bottom_nav)
@@ -30,6 +33,8 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
 
         val navController = navHostFragment.navController
+
+        setSupportActionBar(toolbar)
 
         setupDrawerLayout(navController)
         setupBottomNavBar(navController)
@@ -42,6 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         navController.addOnDestinationChangedListener { _, _, _ ->
             supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_hamburger)
+            supportActionBar?.setDisplayShowTitleEnabled(false)
         }
     }
 

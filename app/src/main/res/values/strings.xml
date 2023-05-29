@@ -15,4 +15,8 @@
     <string name="str_menu_nav_cars">Autos</string>
     <string name="str_menu_nav_search">Buscar</string>
     <string name="str_menu_nav_profile">Perfil</string>
+
+    <!-- Nav Bar -->
+    <string name="str_nav_bar_premier">Premier</string>
+    <string name="str_nav_bar_rent_car">RentCar</string>
 </resources>
