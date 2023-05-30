@@ -1,13 +1,17 @@
 package ort.edu.ar.tp3.primerparcial.grupo4.data.entities;
 
-class Car(
-    model: String?,
-    year: Int?,
-    fuelType: String?,
-    transmission: String?,
-    cylinders: String?,
-    brand: String?
-) {
+// Object from Api Ninja
+class CarResponse {
+    var model: String = ""
+    var year: Int = 0
+    var fuel_type: String = ""
+    var transmission: String = ""
+    var cylinders: String = ""
+    var brand: String = ""
+}
+
+// Map CarResponse to Car
+class Car(carResponse: CarResponse) {
     var model: String = ""
     var year: Int = 0
     var fuelType: String = ""
@@ -16,12 +20,11 @@ class Car(
     var brand: String = ""
 
     init {
-        this.model = model!!
-        this.year = year!!
-        this.fuelType = fuelType!!
-        this.transmission = transmission!!
-        this.cylinders = cylinders!!
-        this.brand = brand!!
+        this.model = carResponse.model
+        this.year = carResponse.year
+        this.fuelType = carResponse.fuel_type
+        this.transmission = carResponse.transmission
+        this.cylinders = carResponse.cylinders
+        this.brand = carResponse.brand
     }
-
 }

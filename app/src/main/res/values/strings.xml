@@ -2,8 +2,11 @@
     <!-- App name -->
     <string name="app_name">PremierRentCar</string>
 
-    <!-- Home Fragment -->
-    <string name="fragment_home_category_filter">Filtro</string>
+    <!-- Recycler Car Category -->
+    <string name="recycler_car_category_sport">Deportivos</string>
+    <string name="recycler_car_category_suv">SUV</string>
+    <string name="recycler_car_category_electric">ELÉCTRICOS</string>
+    <string name="recycler_car_category_filter">Filtro</string>
 
     <!-- Text Premier Rent Car -->
     <string name="premier">Premier</string>

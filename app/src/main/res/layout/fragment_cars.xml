@@ -16,4 +16,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_categorias"
+        android:layout_width="341dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="274dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

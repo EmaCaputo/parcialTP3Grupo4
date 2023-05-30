@@ -5,37 +5,55 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ort.edu.ar.tp3.primerparcial.grupo4.ui.adapters.CategoriaListAdapter
-import ort.edu.ar.tp3.primerparcial.grupo4.ui.entities.Categoria
 import ort.edu.ar.tp3.primerparcial.grupo4.R
+import ort.edu.ar.tp3.primerparcial.grupo4.adapters.CarCategoryListAdapter
+import ort.edu.ar.tp3.primerparcial.grupo4.data.repository.CarRepository
+import ort.edu.ar.tp3.primerparcial.grupo4.service.ApiService
+import ort.edu.ar.tp3.primerparcial.grupo4.service.CarService
 
 class HomeFragment : Fragment() {
 
-    var listaCategorias: MutableList<Categoria> = ArrayList<Categoria>()
+    private lateinit var apiCarService: CarService
+    private lateinit var carRepository: CarRepository
+    private lateinit var carCategoryListAdapter: CarCategoryListAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        listaCategorias.add(Categoria("Deportivos", "shape_bg_category_dep", "img_deportive"))
-        listaCategorias.add(Categoria("SUV", "shape_bg_category_suv", "img_suv"))
-        listaCategorias.add(Categoria("ELÉCTRICOS", "shape_bg_category_elec", "img_electricos"))
+        // Instance CarService
+        apiCarService = ApiService.getRetrofit().create(CarService::class.java)
 
+        // Instance CarRepository
+        carRepository = CarRepository(apiCarService)
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        var vista = inflater.inflate(R.layout.fragment_home, container, false)
+        carCategoryListAdapter = CarCategoryListAdapter()
 
+        val recyclerViewCategoria = view.findViewById<RecyclerView>(R.id.rec_categorias)
+        recyclerViewCategoria.adapter = carCategoryListAdapter
 
-        val recyclerViewCategoria = vista.findViewById<RecyclerView>(R.id.rec_categorias)
-        recyclerViewCategoria.adapter = CategoriaListAdapter(listaCategorias)
         val linearLayoutManager = LinearLayoutManager(context)
         recyclerViewCategoria.layoutManager = linearLayoutManager
 
+        fetchDataAndUpdateLiveData()
 
-        return vista
+        return view
+    }
+
+    private fun fetchDataAndUpdateLiveData() {
+        val carCategories = carRepository.getCarCategories()
+
+        carCategories.observe(viewLifecycleOwner, Observer {
+            carCategoryListAdapter.updateData(it)
+        })
     }
 
 }
