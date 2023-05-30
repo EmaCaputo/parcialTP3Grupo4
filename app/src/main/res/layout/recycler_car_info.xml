@@ -1,146 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="341dp"
-    android:layout_height="112dp"
-    android:layout_margin="19dp">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="19dp"
+    android:background="@drawable/shape_bg_car_info"
+    android:elevation="2.5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txt_model"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:id="@+id/txt_view_car_info_title"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:maxLines="4"
                 android:layout_marginTop="6dp"
-                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/fira_sans_black"
                 android:gravity="center"
-                android:text="Marca"
-                android:textColor="#001D42"
-                android:textSize="17sp" />
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                tools:text="BMW Grand Coupe" />
 
             <ImageView
-                android:id="@+id/img_marca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal|top"
+                android:id="@+id/img_view_car_info_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
                 tools:srcCompat="@tools:sample/avatars" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0.5dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:orientation="vertical">
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/gray_2" />
+
+        <LinearLayout
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/img_transmition"
+                    android:id="@+id/img_transmission"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:gravity="center"
-                    tools:srcCompat="@drawable/ic_transmission" />
+                    android:src="@drawable/ic_transmission" />
 
                 <TextView
-                    android:id="@+id/txt_transmition"
-                    android:layout_width="match_parent"
+                    android:id="@+id/txt_view_car_info_transmission"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="6dp"
                     android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    android:text="transmition"
-                    android:textColor="#001D42"
-                    android:textSize="12sp" />
+                    android:fontFamily="@font/fira_sans_black"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"
+                    tools:text="Automatic" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/img_gasoline"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    tools:srcCompat="@drawable/ic_gasoline" />
+                    android:gravity="center"
+                    android:src="@drawable/ic_gasoline" />
 
                 <TextView
-                    android:id="@+id/txt_gasoline"
-                    android:layout_width="match_parent"
+                    android:id="@+id/txt_view_car_info_fuel"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="6dp"
                     android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    android:text="gasoline"
-                    android:textColor="#001D42"
-                    android:textSize="12sp" />
+                    android:fontFamily="@font/fira_sans_black"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"
+                    tools:text="Gas" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/img_year"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    tools:srcCompat="@drawable/ic_year" />
+                    android:gravity="center"
+                    android:src="@drawable/ic_year" />
 
                 <TextView
-                    android:id="@+id/txt_year"
-                    android:layout_width="match_parent"
+                    android:id="@+id/txt_view_car_info_year"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="6dp"
                     android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    android:text="year"
-                    android:textColor="#001D42"
-                    android:textSize="12sp" />
+                    android:fontFamily="@font/fira_sans_black"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"
+                    tools:text="2023" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/img_seater"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    tools:srcCompat="@drawable/ic_brands" />
+                    android:gravity="center"
+                    android:src="@drawable/ic_brands" />
 
                 <TextView
-                    android:id="@+id/txt_seater"
-                    android:layout_width="match_parent"
+                    android:id="@+id/txt_view_car_info_seater"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="6dp"
                     android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    android:text="seater"
-                    android:textColor="#001D42"
-                    android:textSize="12sp" />
+                    android:fontFamily="@font/fira_sans_black"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp"
+                    tools:text="Two seater" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

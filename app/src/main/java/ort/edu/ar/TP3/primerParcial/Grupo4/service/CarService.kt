@@ -10,7 +10,7 @@ import retrofit2.http.Query
 interface CarService {
 
     @Headers("X-Api-key:" + Constants.API_KEY)
-    @GET("cars?fuel_type=gas")
-    fun getCars(@Query("fuel_type") fuelType: String): Call<List<CarResponse>>
+    @GET("cars?limit=50")
+    fun getCars(@Query("year") year: String): Call<List<CarResponse>>
 
 }

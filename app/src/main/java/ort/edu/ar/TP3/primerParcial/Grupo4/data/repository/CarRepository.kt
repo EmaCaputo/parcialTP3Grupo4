@@ -13,9 +13,9 @@ import retrofit2.Response
 
 class CarRepository(private val apiService: CarService) {
 
-    fun getCars(fuelType: String): MutableLiveData<List<Car>> {
+    fun getCars(year: String): MutableLiveData<List<Car>> {
         val liveData = MutableLiveData<List<Car>>()
-        val response = apiService.getCars(fuelType)
+        val response = apiService.getCars(year)
 
         response.enqueue(object : Callback<List<CarResponse>> {
             override fun onResponse(

@@ -21,6 +21,7 @@ class CarFragment : Fragment() {
     private lateinit var carRepository: CarRepository
     private lateinit var carViewModel: CarViewModel
     private lateinit var carListAdapter: CarListAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -66,9 +67,9 @@ class CarFragment : Fragment() {
 
 
     private fun fetchCars() {
-        val cars = carRepository.getCars("diesel")
+        val cars = carRepository.getCars("2022")
 
-        cars.observe(viewLifecycleOwner , Observer {
+        cars.observe(viewLifecycleOwner, Observer {
             carViewModel.updateData(it)
         })
     }
