@@ -56,7 +56,7 @@ class CarFragment : Fragment() {
     private fun setupCarListAdapter(view: View) {
         carListAdapter = CarListAdapter()
 
-        val recyclerViewCar = view.findViewById<RecyclerView>(R.id.rec_cars)
+        val recyclerViewCar = view.findViewById<RecyclerView>(R.id.recycler_view_cars)
 
         carListAdapter = CarListAdapter()
 

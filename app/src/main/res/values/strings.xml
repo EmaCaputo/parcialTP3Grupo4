@@ -25,4 +25,7 @@
 
     <!-- Fragment Home -->
     <string name="str_fragment_home_brand">Marcas</string>
+
+    <!-- Search Bar -->
+    <string name="searchbar_hint">Buscador de vehiculos</string>
 </resources>
