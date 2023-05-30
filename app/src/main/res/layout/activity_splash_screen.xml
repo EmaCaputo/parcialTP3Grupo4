@@ -19,14 +19,40 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bg_login" />
 
-    <ImageView
-        android:id="@+id/background2"
-        android:layout_width="367dp"
-        android:layout_height="69dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/background"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/premier_card" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:elevation="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/blue_3"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/str_nav_bar_premier"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_23"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/str_nav_bar_rent_car"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_23"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
