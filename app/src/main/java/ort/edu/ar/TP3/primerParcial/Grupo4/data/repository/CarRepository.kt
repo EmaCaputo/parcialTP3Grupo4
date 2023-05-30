@@ -44,6 +44,7 @@ class CarRepository(private val apiService: CarService) {
             CarBrand("Acura", R.drawable.ic_brand_acura, "+10"),
             CarBrand("Alfa Romeo", R.drawable.ic_brand_alfa, "+8"),
             CarBrand("BMW", R.drawable.ic_brand_bmw, "+5"),
+            CarBrand("Ferrari", R.drawable.ic_brand_ferrari, "+1"),
             CarBrand("Fiat", R.drawable.ic_brand_fiat, "+20"),
             CarBrand("Ford", R.drawable.ic_brand_ford, "+18"),
             CarBrand("Hyundai", R.drawable.ic_brand_hyundai, "+7"),

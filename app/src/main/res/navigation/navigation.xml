@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/fragment_cars"
-        android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.main.cars.CarsFragment"
+        android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.main.cars.CarFragment"
         android:label="Autos"
         tools:layout="@layout/fragment_cars" />
 

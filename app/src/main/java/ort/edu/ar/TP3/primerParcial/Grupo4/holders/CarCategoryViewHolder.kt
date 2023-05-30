@@ -1,6 +1,5 @@
 package ort.edu.ar.tp3.primerparcial.grupo4.holders
 
-import android.content.res.Resources
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView

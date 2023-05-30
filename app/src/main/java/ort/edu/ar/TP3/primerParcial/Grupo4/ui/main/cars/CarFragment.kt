@@ -15,13 +15,12 @@ import ort.edu.ar.tp3.primerparcial.grupo4.data.repository.CarRepository
 import ort.edu.ar.tp3.primerparcial.grupo4.service.ApiService
 import ort.edu.ar.tp3.primerparcial.grupo4.service.CarService
 
-class CarsFragment : Fragment() {
+class CarFragment : Fragment() {
 
     private lateinit var apiCarService: CarService
     private lateinit var carRepository: CarRepository
     private lateinit var carViewModel: CarViewModel
     private lateinit var carListAdapter: CarListAdapter
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -36,7 +35,7 @@ class CarsFragment : Fragment() {
 
         // CarViewModel subscriber
         carViewModel.carsLiveData.observe(this, Observer { cars ->
-            carListAdapter.updateCarList(cars)
+            carListAdapter.updateData(cars)
         })
     }
 
@@ -45,22 +44,28 @@ class CarsFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_cars, container, false)
 
-        carListAdapter = CarListAdapter()
+        // Setup Car List Adapter
+        setupCarListAdapter(view)
 
-        val recyclerViewCategoria = view.findViewById<RecyclerView>(R.id.rec_categorias)
-
-        carListAdapter = CarListAdapter()
-
-        recyclerViewCategoria.adapter = carListAdapter
-        recyclerViewCategoria.layoutManager = LinearLayoutManager(context)
-
-        fetchDataAndUpdateLiveData()
+        // Fetch cars
+        fetchCars()
 
         return view
     }
 
+    private fun setupCarListAdapter(view: View) {
+        carListAdapter = CarListAdapter()
 
-    private fun fetchDataAndUpdateLiveData() {
+        val recyclerViewCar = view.findViewById<RecyclerView>(R.id.rec_cars)
+
+        carListAdapter = CarListAdapter()
+
+        recyclerViewCar.adapter = carListAdapter
+        recyclerViewCar.layoutManager = LinearLayoutManager(context)
+    }
+
+
+    private fun fetchCars() {
         val cars = carRepository.getCars("diesel")
 
         cars.observe(viewLifecycleOwner , Observer {

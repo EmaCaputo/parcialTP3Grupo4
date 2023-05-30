@@ -21,12 +21,12 @@
                 android:id="@+id/txt_model"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
                 android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Marca"
                 android:textColor="#001D42"
-                android:textSize="17sp"
-                android:text="Marca" />
+                android:textSize="17sp" />
 
             <ImageView
                 android:id="@+id/img_marca"
@@ -40,94 +40,107 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:id="@+id/img_transmition"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@drawable/ic_transmission" />
+
                 <TextView
                     android:id="@+id/txt_transmition"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:text="transmition"
                     android:textColor="#001D42"
-                    android:textSize="12sp"
-                    android:text="transmition" />
-        </LinearLayout>
+                    android:textSize="12sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:id="@+id/img_gasoline"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@drawable/ic_gasoline" />
+
                 <TextView
                     android:id="@+id/txt_gasoline"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:text="gasoline"
                     android:textColor="#001D42"
-                    android:textSize="12sp"
-                    android:text="gasoline" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:id="@+id/img_year"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@drawable/ic_year" />
+
                 <TextView
                     android:id="@+id/txt_year"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:text="year"
                     android:textColor="#001D42"
-                    android:textSize="12sp"
-                    android:text="year" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:id="@+id/img_seater"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    tools:srcCompat="@drawable/ic_brands" />
+
                 <TextView
                     android:id="@+id/txt_seater"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:text="seater"
                     android:textColor="#001D42"
-                    android:textSize="12sp"
-                    android:text="seater" />
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

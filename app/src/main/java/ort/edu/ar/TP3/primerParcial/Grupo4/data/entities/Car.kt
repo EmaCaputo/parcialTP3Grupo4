@@ -6,8 +6,7 @@ class CarResponse {
     var year: Int = 0
     var fuel_type: String = ""
     var transmission: String = ""
-    var cylinders: String = ""
-    var brand: String = ""
+    var make: String = ""
 }
 
 // Map CarResponse to Car
@@ -16,7 +15,6 @@ class Car(carResponse: CarResponse) {
     var year: Int = 0
     var fuelType: String = ""
     var transmission: String = ""
-    var cylinders: String = ""
     var brand: String = ""
 
     init {
@@ -24,7 +22,6 @@ class Car(carResponse: CarResponse) {
         this.year = carResponse.year
         this.fuelType = carResponse.fuel_type
         this.transmission = carResponse.transmission
-        this.cylinders = carResponse.cylinders
-        this.brand = carResponse.brand
+        this.brand = carResponse.make
     }
 }

@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ort.edu.ar.tp3.primerparcial.grupo4.R
+import ort.edu.ar.tp3.primerparcial.grupo4.adapters.CarBrandListAdapter
 import ort.edu.ar.tp3.primerparcial.grupo4.adapters.CarCategoryListAdapter
 import ort.edu.ar.tp3.primerparcial.grupo4.data.repository.CarRepository
 import ort.edu.ar.tp3.primerparcial.grupo4.service.ApiService
@@ -18,8 +19,8 @@ class HomeFragment : Fragment() {
 
     private lateinit var apiCarService: CarService
     private lateinit var carRepository: CarRepository
+    private lateinit var carBrandListAdapter: CarBrandListAdapter
     private lateinit var carCategoryListAdapter: CarCategoryListAdapter
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -35,20 +36,52 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        carCategoryListAdapter = CarCategoryListAdapter()
+        // Setup Car Brand Adapter
+        setupCarBrandAdapter(view)
 
-        val recyclerViewCategoria = view.findViewById<RecyclerView>(R.id.rec_categorias)
-        recyclerViewCategoria.adapter = carCategoryListAdapter
+        // Setup Car Category Adapter
+        setupCarCategoryAdapter(view)
 
-        val linearLayoutManager = LinearLayoutManager(context)
-        recyclerViewCategoria.layoutManager = linearLayoutManager
+        // Fetch brands
+        fetchCarBrands()
 
-        fetchDataAndUpdateLiveData()
+        // Fetch categories
+        fetchCarCategories()
 
         return view
     }
 
-    private fun fetchDataAndUpdateLiveData() {
+    private fun setupCarBrandAdapter(view: View) {
+        carBrandListAdapter = CarBrandListAdapter()
+
+        val recyclerViewCarBrand = view.findViewById<RecyclerView>(R.id.rec_marcas)
+        recyclerViewCarBrand.adapter = carBrandListAdapter
+
+        val linearLayoutManagerHorizontal =
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        recyclerViewCarBrand.layoutManager = linearLayoutManagerHorizontal
+    }
+
+    private fun setupCarCategoryAdapter(view: View) {
+        carCategoryListAdapter = CarCategoryListAdapter()
+
+        val recyclerViewCarCategory = view.findViewById<RecyclerView>(R.id.rec_categorias)
+        recyclerViewCarCategory.adapter = carCategoryListAdapter
+
+        val linearLayoutManagerVertical =
+            LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        recyclerViewCarCategory.layoutManager = linearLayoutManagerVertical
+    }
+
+    private fun fetchCarBrands() {
+        val carBrands = carRepository.getCarBrands()
+
+        carBrands.observe(viewLifecycleOwner, Observer {
+            carBrandListAdapter.updateData(it)
+        })
+    }
+
+    private fun fetchCarCategories() {
         val carCategories = carRepository.getCarCategories()
 
         carCategories.observe(viewLifecycleOwner, Observer {

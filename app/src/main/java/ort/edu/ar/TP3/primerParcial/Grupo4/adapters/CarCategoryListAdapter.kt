@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ort.edu.ar.tp3.primerparcial.grupo4.R
-import ort.edu.ar.tp3.primerparcial.grupo4.data.entities.Car
 import ort.edu.ar.tp3.primerparcial.grupo4.data.entities.CarCategory
 import ort.edu.ar.tp3.primerparcial.grupo4.holders.CarCategoryViewHolder
 
@@ -23,7 +22,6 @@ class CarCategoryListAdapter : RecyclerView.Adapter<CarCategoryViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: CarCategoryViewHolder, position: Int) {
-        carCategoryList[position]
         holder.setCarCategory(carCategoryList[position])
     }
 
@@ -31,6 +29,5 @@ class CarCategoryListAdapter : RecyclerView.Adapter<CarCategoryViewHolder>() {
         this.carCategoryList = carCategoryList
         notifyDataSetChanged()
     }
-
 
 }
