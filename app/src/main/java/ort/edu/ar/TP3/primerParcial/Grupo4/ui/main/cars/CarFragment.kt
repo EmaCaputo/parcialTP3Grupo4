@@ -4,6 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -44,12 +47,25 @@ class CarFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_cars, container, false)
+        val mainLayout = view.findViewById<ConstraintLayout>(R.id.fragment_cars)
 
         // Setup Car List Adapter
         setupCarListAdapter(view)
 
         // Fetch cars
         fetchCars()
+
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+            // Modo oscuro activado
+            mainLayout.setBackgroundColor(
+                ContextCompat.getColor(requireContext(), R.color.white_2)
+            )
+        } else {
+            // Modo claro activado
+            mainLayout.setBackgroundColor(
+                ContextCompat.getColor(requireContext(), R.color.white)
+            )
+        }
 
         return view
     }

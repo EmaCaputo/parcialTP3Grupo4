@@ -2,7 +2,10 @@ package ort.edu.ar.tp3.primerparcial.grupo4.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -39,6 +42,18 @@ class MainActivity : AppCompatActivity() {
 
         setupDrawerLayout(navController)
         setupBottomNavBar(navController)
+
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+            // Modo oscuro activado
+            findViewById<ConstraintLayout>(R.id.main_activity).setBackgroundColor(
+                ContextCompat.getColor(this, R.color.white_2)
+            )
+        } else {
+            // Modo claro activado
+            findViewById<ConstraintLayout>(R.id.main_activity).setBackgroundColor(
+                ContextCompat.getColor(this, R.color.white)
+            )
+        }
     }
 
     private fun setupDrawerLayout(navController: NavController) {
@@ -65,5 +80,7 @@ class MainActivity : AppCompatActivity() {
 
         return false
     }
+
+
 
 }
