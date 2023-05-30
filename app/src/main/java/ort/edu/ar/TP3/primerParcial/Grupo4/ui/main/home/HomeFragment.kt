@@ -54,7 +54,7 @@ class HomeFragment : Fragment() {
     private fun setupCarBrandAdapter(view: View) {
         carBrandListAdapter = CarBrandListAdapter()
 
-        val recyclerViewCarBrand = view.findViewById<RecyclerView>(R.id.rec_marcas)
+        val recyclerViewCarBrand = view.findViewById<RecyclerView>(R.id.recycler_view_car_brand)
         recyclerViewCarBrand.adapter = carBrandListAdapter
 
         val linearLayoutManagerHorizontal =
@@ -65,7 +65,7 @@ class HomeFragment : Fragment() {
     private fun setupCarCategoryAdapter(view: View) {
         carCategoryListAdapter = CarCategoryListAdapter()
 
-        val recyclerViewCarCategory = view.findViewById<RecyclerView>(R.id.rec_categorias)
+        val recyclerViewCarCategory = view.findViewById<RecyclerView>(R.id.recycler_view_car_categories)
         recyclerViewCarCategory.adapter = carCategoryListAdapter
 
         val linearLayoutManagerVertical =

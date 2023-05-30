@@ -22,4 +22,7 @@
     <!-- Nav Bar -->
     <string name="str_nav_bar_premier">Premier</string>
     <string name="str_nav_bar_rent_car">RentCar</string>
+
+    <!-- Fragment Home -->
+    <string name="str_fragment_home_brand">Marcas</string>
 </resources>

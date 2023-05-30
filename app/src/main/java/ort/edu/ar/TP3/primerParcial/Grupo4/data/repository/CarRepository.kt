@@ -51,7 +51,7 @@ class CarRepository(private val apiService: CarService) {
             CarBrand("Jeep", R.drawable.ic_brand_jeep, "+9"),
             CarBrand("Kia", R.drawable.ic_brand_kia, "+2"),
             CarBrand("Lotus", R.drawable.ic_brand_lotus, "+14"),
-            CarBrand("Mercedes Benz", R.drawable.ic_brand_mercedes, "+16")
+            CarBrand("Mercedes", R.drawable.ic_brand_mercedes, "+16")
         )
 
         return liveData
