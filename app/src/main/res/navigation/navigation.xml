@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/fragment_cars"
+        android:id="@+id/rec_cars"
         android:name="ort.edu.ar.tp3.primerparcial.grupo4.ui.main.cars.CarsFragment"
         android:label="Autos"
         tools:layout="@layout/fragment_cars" />

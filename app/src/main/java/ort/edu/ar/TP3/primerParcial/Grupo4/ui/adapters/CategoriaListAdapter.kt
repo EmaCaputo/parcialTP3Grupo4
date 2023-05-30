@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ort.edu.ar.tp3.primerparcial.grupo4.ui.holders.CategoriasViewHolder
 import ort.edu.ar.tp3.primerparcial.grupo4.R
-import ort.edu.ar.tp3.primerparcial.grupo4.ui.entities.Categoria
+import ort.edu.ar.TP3.primerParcial.Grupo4.data.entities.Categoria
 
 class CategoriaListAdapter(
     private val categoriasList: MutableList<Categoria>

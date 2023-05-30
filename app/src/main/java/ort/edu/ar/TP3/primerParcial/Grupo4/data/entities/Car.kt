@@ -5,23 +5,23 @@ class Car(
     year: Int?,
     fuelType: String?,
     transmission: String?,
-    cylinders: String?,
+    make: String?,
     brand: String?
 ) {
     var model: String = ""
     var year: Int = 0
     var fuelType: String = ""
     var transmission: String = ""
-    var cylinders: String = ""
     var brand: String = ""
+    var make: String = ""
 
     init {
         this.model = model!!
         this.year = year!!
         this.fuelType = fuelType!!
         this.transmission = transmission!!
-        this.cylinders = cylinders!!
         this.brand = brand!!
+        this.make = make!!
     }
 
 }

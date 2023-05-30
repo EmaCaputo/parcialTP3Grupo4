@@ -59,6 +59,9 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        android:background="@color/white"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
         android:translationZ="100dp"
         app:headerLayout="@layout/menu_slide_header"
         app:menu="@menu/menu_slide" />

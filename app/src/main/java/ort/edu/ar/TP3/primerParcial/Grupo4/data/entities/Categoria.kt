@@ -1,4 +1,4 @@
-package ort.edu.ar.tp3.primerparcial.grupo4.ui.entities
+package ort.edu.ar.TP3.primerParcial.Grupo4.data.entities
 
 import java.io.Serializable
 

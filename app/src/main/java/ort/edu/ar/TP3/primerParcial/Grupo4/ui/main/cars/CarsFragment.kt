@@ -1,18 +1,17 @@
 package ort.edu.ar.tp3.primerparcial.grupo4.ui.main.cars
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.NavHostFragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import ort.edu.ar.tp3.primerparcial.grupo4.R
 import ort.edu.ar.tp3.primerparcial.grupo4.data.entities.Car
 import ort.edu.ar.tp3.primerparcial.grupo4.data.repository.CarRepository
 import ort.edu.ar.tp3.primerparcial.grupo4.service.ApiService
 import ort.edu.ar.tp3.primerparcial.grupo4.service.CarService
-import java.util.logging.Logger
 
 class CarsFragment : Fragment() {
 
@@ -27,10 +26,16 @@ class CarsFragment : Fragment() {
     ): View? {
         // Instanciar apiCarService
         apiCarService = ApiService.getRetrofit().create(CarService::class.java)
+        val vista = inflater.inflate(R.layout.fragment_cars, container, false)
 
         getCars()
 
-        return inflater.inflate(R.layout.fragment_cars, container, false)
+        /*val recyclerViewCar = vista.findViewById<RecyclerView>(R.id.rec_cars)
+        recyclerViewCar.adapter = CarListAdapter(cars)
+        val linearLayoutManager = LinearLayoutManager(context)
+        recyclerViewCar.layoutManager = linearLayoutManager*/
+
+        return vista
     }
 
     fun getCars() {
