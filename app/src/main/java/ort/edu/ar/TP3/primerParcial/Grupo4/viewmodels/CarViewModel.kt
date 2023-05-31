@@ -1,4 +1,4 @@
-package ort.edu.ar.tp3.primerparcial.grupo4.ui.main.cars
+package ort.edu.ar.tp3.primerparcial.grupo4.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

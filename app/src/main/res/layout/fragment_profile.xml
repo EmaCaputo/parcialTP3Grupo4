@@ -22,9 +22,10 @@
             android:src="@drawable/ic_photo" />
 
         <TextView
+            android:id="@+id/txt_view_profile_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Martin"
+            tools:text="Martin"
             android:textSize="32sp"
             android:textColor="#001E2F"
             android:fontFamily="sans-serif-black"

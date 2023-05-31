@@ -20,87 +20,102 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bg_login" />
 
-
-
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"/>
+        android:id="@+id/layout_title_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="50dp"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView2"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="115dp"
-            android:layout_marginLeft="57dp"
-            app:srcCompat="@drawable/premier_card" />
+            android:background="@color/blue_3"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/str_nav_bar_premier"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:fontFamily="@font/fira_sans"
+            android:text="@string/str_nav_bar_rent_car"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="354dp"
-        android:layout_height="293dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/layout_title_logo">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edit_txt_username"
+            android:layout_width="354dp"
+            android:layout_height="60dp"
+            android:background="@drawable/field_bg"
             android:ems="10"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/str_activity_login_username_hint"
             android:inputType="textPersonName"
             android:textAlignment="center"
-            android:layout_width="354dp"
-            android:hint="Nombre"
-            android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/field_bg"
-            />
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_2" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/edit_txt_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
             android:layout_marginTop="31dp"
+            android:background="@drawable/field_bg"
             android:ems="10"
-            android:textAlignment="center"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/str_activity_login_pass_hint"
             android:inputType="textPassword"
-            android:background="@drawable/field_bg"/>
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_2" />
 
         <TextView
-            android:id="@+id/olvide_la_c"
-            android:layout_width="145dp"
-            android:layout_height="21dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="107dp"
-            android:layout_alignParentTop="true"
-            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="107dp"
             android:layout_marginTop="9dp"
-            android:text="@string/olvide_la_c"
+            android:fontFamily="@font/poppins_regular"
             android:gravity="center_horizontal|top"
-            />
+            android:text="@string/str_activity_login_reset_pass"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
         <Button
-            android:id="@+id/btn_ingresar"
+            android:id="@+id/btn_login"
             android:layout_width="206dp"
             android:layout_height="60dp"
-            android:text="Ingresar"
+            android:layout_marginStart="74dp"
             android:layout_marginTop="52dp"
-            android:layout_marginLeft="74dp"
             android:background="@drawable/btn_bg"
-            android:textColor="#FFFFFF"/>
-
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/str_activity_login_login"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:enabled="false"/>
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,11 +8,6 @@
     <string name="recycler_car_category_electric">ELÉCTRICOS</string>
     <string name="recycler_car_category_filter">Filtro</string>
 
-    <!-- Text Premier Rent Car -->
-    <string name="premier">Premier</string>
-    <string name="rent">RentCar</string>
-    <string name="olvide_la_c">Olvide la contraseña</string>
-
     <!-- Menu Nav -->
     <string name="str_menu_nav_home">Home</string>
     <string name="str_menu_nav_cars">Autos</string>
@@ -31,4 +26,10 @@
 
     <!-- Search Bar -->
     <string name="searchbar_hint">Buscador de vehiculos</string>
+
+    <!-- Login Activity -->
+    <string name="str_activity_login_username_hint">Nombre de usuario</string>
+    <string name="str_activity_login_pass_hint">Contraseña</string>
+    <string name="str_activity_login_reset_pass">Olvide la contraseña</string>
+    <string name="str_activity_login_login">INGRESAR</string>
 </resources>

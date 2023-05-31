@@ -14,6 +14,7 @@ import ort.edu.ar.tp3.primerparcial.grupo4.adapters.CarListAdapter
 import ort.edu.ar.tp3.primerparcial.grupo4.data.repository.CarRepository
 import ort.edu.ar.tp3.primerparcial.grupo4.service.ApiService
 import ort.edu.ar.tp3.primerparcial.grupo4.service.CarService
+import ort.edu.ar.tp3.primerparcial.grupo4.viewmodels.CarViewModel
 
 class CarFragment : Fragment() {
 
