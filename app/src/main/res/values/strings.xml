@@ -27,6 +27,11 @@
     <!-- Fragment Profile -->
     <string name="str_fragment_profile_notifications">Notificaciones</string>
 
+    <!-- Fragment Setting -->
+    <string name="str_fragment_setting_general">Generales</string>
+    <string name="str_fragment_setting_mod_dark">Modo Oscuro</string>
+    <string name="str_fragment_setting_notifications">Notificaciones</string>
+
     <!-- Search Bar -->
     <string name="searchbar_hint">Buscador de vehiculos</string>
 
