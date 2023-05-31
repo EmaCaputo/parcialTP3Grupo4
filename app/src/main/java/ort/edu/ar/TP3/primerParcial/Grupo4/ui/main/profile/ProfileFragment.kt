@@ -26,6 +26,7 @@ class ProfileFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
         view.findViewById<TextView>(R.id.txt_view_profile_username).text = userViewModel.username
+
         return view
     }
 }

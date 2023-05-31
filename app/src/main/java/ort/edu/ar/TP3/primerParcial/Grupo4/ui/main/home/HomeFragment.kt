@@ -65,7 +65,8 @@ class HomeFragment : Fragment() {
     private fun setupCarCategoryAdapter(view: View) {
         carCategoryListAdapter = CarCategoryListAdapter()
 
-        val recyclerViewCarCategory = view.findViewById<RecyclerView>(R.id.recycler_view_car_categories)
+        val recyclerViewCarCategory =
+            view.findViewById<RecyclerView>(R.id.recycler_view_car_categories)
         recyclerViewCarCategory.adapter = carCategoryListAdapter
 
         val linearLayoutManagerVertical =

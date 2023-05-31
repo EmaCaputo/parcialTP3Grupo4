@@ -5,15 +5,13 @@
     android:background="@drawable/shape_bg_main_activity"
     tools:context=".ui.main.favorites.FavoriteFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Aùn no tienes favoritos"
-        android:textSize="15sp"
-        android:paddingTop="50dp"
-        android:textColor="#001E2F"
         android:fontFamily="sans-serif-black"
-        android:gravity="center_horizontal"/>
-
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="Aùn no tienes favoritos"
+        android:textColor="#001E2F"
+        android:textSize="15sp" />
 </FrameLayout>
