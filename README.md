@@ -1,7 +1,14 @@
-# parcialTP3Grupo4
+# Parcial TP3 ⚠️
 
-Jcruzrg = Juan Cruz Romero Garcia
-JoaSt96 = Joaquin Stok
-Dardologo = Helu Dardo
-Francodiner = Franco Diner
-EmaCaputo = Emanuel Caputo
+## Grupo 4 🥇
+
+💻 Integrantes 🚀
+
+| GitHub User | Nombre | Apellido |
+|-------------|--------|----------|
+|[@dardologo](https://github.com/EmaCaputo/parcialTP3Grupo4/commits?author=dardologo)|Dardo|Helu|
+|[@emacaputo](https://github.com/EmaCaputo/parcialTP3Grupo4/commits?author=emacaputo)|Emanuel|Caputo|
+|[@francodiner](https://github.com/EmaCaputo/parcialTP3Grupo4/commits?author=francodiner)|Franco|Diner|
+|[@joast96](https://github.com/EmaCaputo/parcialTP3Grupo4/commits?author=joast96)|Joaquin|Stok|
+|[@jcruzrg](https://github.com/EmaCaputo/parcialTP3Grupo4/commits?author=jcruzrg)|Juan Cruz|Romero Garcia|
+
